@@ -7,7 +7,7 @@ def sanitize_input(func):
 
     def func_wrapper(array, n):
         if not isinstance(array, collections.Sequence):
-            raise ValueError("array has to be array or list")
+            raise ValueError("array has to be a collection type")
         if not isinstance(n, int):
             raise ValueError("n has to be an integer")
         if n < 1:
