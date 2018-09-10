@@ -9,7 +9,7 @@ final chunk is going to store the remainder.
 Install the package using pip ```pip install git+https://github.com/huntipl/tcc```
 
 ## Running the tests
-Run ```pytest```
+Run ```pytest``` or ```python -m pytest``` in the repository root folder
 
 ## Basic Usage
 ```python
