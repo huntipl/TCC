@@ -13,3 +13,9 @@ def test_empty_array_split_returns_empty_array(test_chunks):
 def test_split_to_less_than_1_chunks_raises_valueerror_exception(test_chunks):
     with pytest.raises(ValueError):
         tcc.split_array([], test_chunks)
+
+
+@pytest.mark.parametrize("test_chunks", ['test', 1.1])
+def test_chunks_not_a_integer_raises_valueerror_exception(test_chunks):
+    with pytest.raises(ValueError):
+        tcc.split_array([], test_chunks)
