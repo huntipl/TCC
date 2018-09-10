@@ -22,7 +22,7 @@ def test_chunks_not_a_integer_raises_valueerror_exception(test_chunks):
 
 
 @pytest.mark.parametrize("test_array", [1.1, 4, set()])
-def test_input_array_is_type_of_array_list_Set_etc(test_array):
+def test_input_array_is_type_of_array_list_set_etc(test_array):
     with pytest.raises(ValueError):
         tcc.split_array(test_array, 1)
 
@@ -30,6 +30,7 @@ def test_input_array_is_type_of_array_list_Set_etc(test_array):
 @pytest.mark.parametrize("test_array, test_chunks, expected", [
     [[1, 2, 3], 3, [[1], [2], [3]]],
     [[1, 2, 3, 4], 2, [[1, 2], [3, 4]]],
+    [['1', 2, 3.3, 4], 2, [['1', 2], [3.3, 4]]],
     ]
 )
 def test_array_dividing_without_remainder_splits_into_n_even_chunks(test_array, test_chunks, expected):
