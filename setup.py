@@ -1,7 +1,7 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
     name="tcc",
-    version="0.0.1",
-    packages=find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"])
+    version="0.0.3",
+    py_modules=['tcc']
 )
