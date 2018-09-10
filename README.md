@@ -6,7 +6,7 @@ final chunk is going to store the remainder.
 ## Getting started
 
 ### Installation
-Install the package using pip ```pip install tcc```
+Install the package using pip ```pip install [repository path on disk]```
 
 ## Running the tests
 Run ```pytest```
