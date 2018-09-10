@@ -6,7 +6,7 @@ final chunk is going to store the remainder.
 ## Getting started
 
 ### Installation
-Install the package using pip ```pip install [repository path on disk]```
+Install the package using pip ```pip install git+https://github.com/huntipl/tcc```
 
 ## Running the tests
 Run ```pytest```
@@ -15,9 +15,9 @@ Run ```pytest```
 ```python
 import tcc
 
-array = [1,2,3,4,5]
+array = [1, 2, 3, 4, 5]
 chunks = 3
 
 result = tcc.split_array(array, chunks)
-# result = [[1,2],[3,4],[5]]
+# result = [[1, 2], [3, 4], [5]]
 ```
